@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div id="main">
+            <p>Finding the Html elements by tag name</p>
+            <p>The example demonstrates <b>getElement by TagName</b> method</p>
+        </div>
+        <p id="demo"></p>
+
+
+        <script>
+            const x = document.getElementById("main");
+            const y = x.getElementsByTagName("p");
+            document.getElementById("demo").innerHTML = "the second paragraph inside of the main div is " + y[1].innerHTML;
+        </script>
+
+
+    </body>
+</html>
